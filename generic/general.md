@@ -2,7 +2,7 @@
 # Update and install these packages
 ```bash
 dnf update -y
-dnf install -y make git autoconf gcc gcc-c++ openssl openssl-devel curl firewalld vim policycoreutils-devel
+dnf install -y make git autoconf gcc gcc-c++ openssl openssl-devel curl firewalld vim policycoreutils-devel postgresql-devel node-gyp clang automake gettext pkgconfig boost boost-devel
 ```
 after that run the following
 ```bash
