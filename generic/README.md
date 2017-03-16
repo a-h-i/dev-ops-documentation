@@ -59,4 +59,4 @@ and `/var/log` directory for specific services such as nginx.
 
 # How Tos
 
-[general dependencies to be installed everywhere](general.md)
+[general dependencies to be installed everywhere base setup and other tid bits.](general.md)

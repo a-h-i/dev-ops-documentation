@@ -7,6 +7,7 @@ A repository of knowledge as well as instructions.
 
 Please not that the instructions here are not guidelines but to be considered law when provisioning servers.
 
+Anyserver found not following these guidelines will lead to it's termination and reprovisining and the revoking of server acces to whomever provisioned it at the first place.
 
 
 
@@ -39,3 +40,17 @@ For periodic jobs we use systemd **DO NOT USE CRON** consult [this](generic/TIME
 # Languages and Environments
 
 For setting up language support please check [this](languages/README.md) document.
+
+
+
+# Nginx Configuration
+
+We use nginx as a reverse proxy and load balancer. To read on how to configure it check [this](nginx/README.md) document.
+
+
+# HTTPS and certificate configuration
+
+We always use HTTPS even in testing environments, check [this](nginx/HTTPS.md) document for how to.
+
+
+
