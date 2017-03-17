@@ -3,6 +3,7 @@
 ```bash
 dnf update -y
 dnf install -y make git autoconf gcc gcc-c++ openssl openssl-devel curl firewalld vim policycoreutils-devel postgresql-devel node-gyp clang automake gettext pkgconfig boost boost-devel wget python python3 node ruby
+readline-devel
 ```
 after that run the following
 ```bash
