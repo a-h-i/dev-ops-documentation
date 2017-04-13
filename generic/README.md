@@ -53,6 +53,8 @@ All systemd services since timers are systemd units, check above list.
 `journalctl -xe -u <unitname>` also `/var/log/messages`, ommit unitname option for full logs 
 and `/var/log` directory for specific services such as nginx.
 
+[Awesome digital ocean guide on some journalctl options and functionality](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs).
+
 
 
 
