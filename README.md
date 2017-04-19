@@ -89,3 +89,10 @@ The idea is you don't want to add network latency to your cache. Or at least min
 
 Instance server. One server per app instance. not per app. If you want to to run 3 app instances you need exactly 3 app aservers.
 The minumum app server or production is 2GB o ram and 1 CPU. Prefer 4GB 2 CPU if you can make the economics work.
+
+
+
+
+# Example systemd service
+
+Checkout [taskarabia](examples/systemd/taskarabia.service)

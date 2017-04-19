@@ -57,6 +57,8 @@ Either use v7.7.1 or latest, configuration of other versions if required is done
 
 rbenv is used to manage ruby versions, installing system ruby before rbenv is prudent.
 
+DO NOT USE RVM.
+
 ### Rbenv installation
 
 ```bash

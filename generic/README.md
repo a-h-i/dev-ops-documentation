@@ -62,3 +62,15 @@ and `/var/log` directory for specific services such as nginx.
 # How Tos
 
 [general dependencies to be installed everywhere base setup and other tid bits.](general.md)
+
+
+# Security for new servers.
+
+Edit the file `/etc/ssh/sshd_config` as root
+
+Do the following
+
+1. Change `X11Forwarding yes` to `X11Forwarding no`.
+2. Change `PasswordAuthentication yes` to `PasswordAuthentication no`
+
+After run `systemctl restart sshd`
