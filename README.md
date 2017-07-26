@@ -95,7 +95,7 @@ The minumum app server or production is 2GB o ram and 1 CPU. Prefer 4GB 2 CPU if
 
 # Example systemd service
 
-Checkout [taskarabia](examples/syssssssssssssssstemd/taskarabia.service)
+Checkout [taskarabia](examples/systemd/taskarabia.service)
 
 
 
