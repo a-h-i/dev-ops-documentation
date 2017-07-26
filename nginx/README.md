@@ -109,4 +109,9 @@ worker process
 
 request flow
 
+
 ![request flow](../assets/infographic-Inside-NGINX_request-flow.png)
+
+
+
+
