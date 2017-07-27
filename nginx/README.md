@@ -101,13 +101,13 @@ From nginx official doc
 > Events are initiated by new incoming connections. These connections are assigned to a state machine – the HTTP state machine is the most commonly used, 
 > but NGINX also implements state machines for stream (raw TCP) traffic and for a number of mail protocols (SMTP, IMAP, and POP3).
 
-worker process
+### worker process
 
 
 ![worker process](../assets/infographic-Inside-NGINX_worker-process.png)
 
 
-request flow
+### request flow
 
 
 ![request flow](../assets/infographic-Inside-NGINX_request-flow.png)
