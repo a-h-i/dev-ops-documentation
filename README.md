@@ -2,22 +2,18 @@ DevOps Instructions and Guides
 ==============================
 
 
-This repository acts as a knowledge repo for any questions regarding the DevOps practices of DreiDev,
-A repository of knowledge as well as instructions.
-
-Please not that the instructions here are not guidelines but to be considered law when provisioning servers.
-
-Anyserver found not following these guidelines will lead to it's termination and reprovisining and the revoking of server acces to whomever provisioned it at the first place.
+## Warning
+This is a work in progress some links may be dead for now.
 
 
-
-At DreDev we use Fedora for hosting. Always use the latest stable release, as of this writing it is fedora 25.
-
-SELinux should never be disabled and firewalls are always configured.
+This repository acts as a knowledge repo for any questions regarding the DevOps
+A repository of knowledge as well as instruction.
 
 
-Many documentation links to manual pages, if you do not read the fucking manual you can not run DevOps.
-Take the time to RTFM which is common for Linux users and sysadmins.
+
+Fedora or RPM based systems are assumed in these guides.
+
+Please take the time to read the manuals
 
 
 # Base Server Setup
@@ -78,7 +74,7 @@ Note that caches and DBs would use up as much memory as you throw at them. With 
 - Instance server(s)
 
 
-THe load balancer can be shared across multiple services. For example Crush, Cairosel and Task Arabia can all have one load balancer. We use nginx almost exclusively
+The load balancer can be shared across multiple services. For example Crush, Cairosel and Task Arabia can all have one load balancer. We use nginx almost exclusively
 in dreidev.
 
 DB Servers are things like Mongo or Postgresql again these are shared just like the load balancer.
