@@ -34,31 +34,32 @@ We want a user that can:
 We assume python is globally installed.
 
 
-So let's create our user. For our example we will assume the user in named `taskarabia`
+So let's create our user. For our example we will assume the user in named `example_user_1`
 
-`useradd taskarabia` creates the user. At first the user does not have a password. We do not need to create a password as no password is valid and having it as none simply disables password login option. Which is what we want. Note that by default each user belongs to a group of the same name.
+`useradd example_user_1` creates the user. At first the user does not have a password. We do not need to create a password as no password is valid and having it as none simply disables password login option. Which is what we want. Note that by default each user belongs to a group of the same name.
 
 Second we need to add our authorized keys.
+
 As root do
 
-1. `su - taskarabia`
+1. `su - example_user_1`
 2. `mkdir ~/.ssh`
 3. `exit`
-4. `cp ~/.ssh/authorized_keys ~taskarabia/.ssh/`
-5. `chown taskarabia:taskarabia ~taskarabia/.ssh/authorized_keys`
-6. `su - taskarabia`
+4. `cp ~/.ssh/authorized_keys ~example_user_1/.ssh/`
+5. `chown example_user_1:example_user_1 ~example_user_1/.ssh/authorized_keys`
+6. `su - example_user_1`
 7. `chmod 700 .ssh`
 6. `chmod a+r .ssh/authorized_keys`
 7. `exit`
 
-Now ssh as taskarabia user to complete the rest of the steps.
+Now ssh as example_user_1 user to complete the rest of the steps.
 
 Next we install rbenv and nvm, you can [check here](../languages/README.md) for instructions on how.
 
 And thats it. 
 Oh one more thing. If you want sudo just do as root.
 
-`usermod -a -G wheel taskarabia`
+`usermod -a -G wheel example_user_1`
 
 Oh actually that won't work as that way sudo will require a password and our user doesn't have a password remember? so what now?
 
@@ -69,8 +70,8 @@ Steps
 
 as root add group via `groupadd nopasswheel`
 
-add your user to that group `usermod -aG nopasswheel taskarabia`.
+add your user to that group `usermod -aG nopasswheel example_user_1`.
 
 Then as root edit the file `/etc/sudoers`  and add this at the end of the file `%nopasswheel ALL=(ALL) NOPASSWD: ALL`.
 
-Relogin with taskarabia user if applicable and you are now a sudoer.
+Relogin with example_user_1 user if applicable and you are now a sudoer.

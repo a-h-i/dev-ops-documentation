@@ -1,25 +1,25 @@
 
 # Note that envoronment variables should be set via a file in /etc/profile.d directory
-# Runs as taskarabia user
+# Runs as example_app user
 
 
 [Unit]
-Description=Task arabia sockets and realtime API
+Description=Some web service
 After=postgresql.service redis.service
 
 [Service]
 Environment=NODE_ENV=production
 # Additionally you can specify custom restart and stop commands
-ExecStart=/home/taskarbia/.nvm/versions/node/v7.8.0/bin/node run_server.js
-WorkingDirectory=/home/taskarbia/taskarabia_sockets/current
+ExecStart=/home/example_app/.nvm/versions/node/v7.8.0/bin/node run_server.js
+WorkingDirectory=/home/example_app/example_app_sockets/current
 Restart=always # Auto restart
 RestartSec=10 # Restart delay
 StandardOutput=syslog
 StandardError=syslog # Syslog is best log
 Type=simple
-SyslogIdentifier=taskarabia-sockets # access via journalctl
-User=taskarabia
-Group=taskarabia
+SyslogIdentifier=example_app-sockets # access via journalctl
+User=example_app
+Group=example_app
 PrivateTmp=True # create a private tmp directory
 NoNewPrivileges=True # DO not allow escalation after start via sudo for example.
 

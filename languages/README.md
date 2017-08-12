@@ -1,6 +1,6 @@
 # Language Support
 
-This document details how to setup environments for various languages used currently at dreidev or those that we are planning to use / might be using in the future and consider part of our toolbelt.
+This document details how to setup environments for some languages.
 
 
 

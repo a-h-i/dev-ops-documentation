@@ -40,7 +40,6 @@ Advantages:
 
 Systemd comes with timers, note that cron is still available it is just not favored.
 
-As far as dreidev DevOps is concerned, never use cron.
 
 Timers have the full capabilities of systemd services and it's API.
 
