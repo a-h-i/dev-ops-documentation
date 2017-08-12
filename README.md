@@ -74,8 +74,9 @@ Note that caches and DBs would use up as much memory as you throw at them. With 
 - Instance server(s)
 
 
-The load balancer can be shared across multiple services. For example Crush, Cairosel and Task Arabia can all have one load balancer. We use nginx almost exclusively
-in dreidev.
+The load balancer can be shared across multiple services.
+
+I always use nginx as a load balancer myself.
 
 DB Servers are things like Mongo or Postgresql again these are shared just like the load balancer.
 Both the load balancer and DB Server are scaled vertically before horizontal.
